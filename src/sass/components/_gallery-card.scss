@@ -1,0 +1,10 @@
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__img-block {
+    display: flex;
+    gap: 24px;
+  }
+}

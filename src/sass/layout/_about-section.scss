@@ -1,8 +1,23 @@
 .about-section {
   padding-top: 104px;
 
+  &__container {
+    display: flex;
+    gap: 24px;
+  }
+
   &__title {
     margin-bottom: 0;
+    //max-width: 324px;
+    flex-basis: calc((100% - 24px) / 2);
+    text-align: start;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   &__subtitle {

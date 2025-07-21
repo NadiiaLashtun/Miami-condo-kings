@@ -1,7 +1,24 @@
 .contacts-section {
   padding-bottom: 104px;
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title {
     margin-bottom: 70px;
+  }
+
+  &__address-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
