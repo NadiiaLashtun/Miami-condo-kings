@@ -13,11 +13,14 @@
     text-align: start;
   }
 
-  &__text-block {
+  &__text-container {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  &__text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    flex-basis: calc((100% - 24px) / 2);
+    gap: 40px;
   }
 
   &__subtitle {
