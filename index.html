@@ -7,12 +7,23 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="header__container container">
+        <div class="burger">
+          <span class="burger__line"></span>
+        </div>
         <nav></nav>
-        <img src="#" alt="Logo" class="logo" />
-        <a href="tel:+1 234 555-55-55">+1 234 555-55-55</a>
-        <img src="" alt="Phone" />
+        <svg class="logo">
+          <use href="./src/img/icons.svg#icon-logo"></use>
+        </svg>
+        <div class="header__phone-container">
+          <a class="header__phone" href="tel:+1 234 555-55-55"
+            >+1 234 555-55-55</a
+          >
+          <svg class="header__phone-icon">
+            <use href="./src/img/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
       </div>
     </header>
     <main>

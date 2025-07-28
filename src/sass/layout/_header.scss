@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+  }
+
+  &__phone-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__phone {
+    color: var(--color-secondary-normal);
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+
+  &__phone-icon {
+    fill: var(--color-secondary-normal);
+    width: 32px;
+    height: 32px;
+  }
+}
