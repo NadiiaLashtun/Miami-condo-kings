@@ -1,9 +1,13 @@
 .testimonials-section {
   &__card-container {
     display: flex;
-    gap: 24px;
+    gap: 48px;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+
+    @media screen and (min-width: $desctop) {
+      gap: 24px;
+    }
   }
 }

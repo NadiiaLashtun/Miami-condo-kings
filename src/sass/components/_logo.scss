@@ -1,6 +1,11 @@
 .logo {
   width: 100%;
-  max-width: 136px;
-  max-height: 82px;
+  max-width: 106px;
+  max-height: 64px;
   fill: var(--color-secondary-normal);
+
+  @media screen and (min-width: $mobile) {
+    max-width: 136px;
+    max-height: 82px;
+  }
 }

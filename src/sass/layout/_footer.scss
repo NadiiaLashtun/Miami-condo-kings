@@ -1,9 +1,13 @@
 .footer {
-  height: 360px;
+  height: 206px;
   background-image: url('../img/footer-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+
+  @media screen and (min-width: $tablet) {
+    height: 360px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -16,7 +20,9 @@
     justify-content: center;
     align-items: flex-end;
     height: 100%;
-    width: 100%;
     padding-bottom: 32px;
+
+    margin-top: auto;
+    align-self: flex-end;
   }
 }

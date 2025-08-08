@@ -1,19 +1,39 @@
 .gallery-card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 24px;
+  }
 
   &__img-block {
     display: flex;
-    gap: 24px;
+    gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+      gap: 24px;
+    }
   }
 
   &__img {
     transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    border-radius: 8px;
+    max-height: 130px;
+    aspect-ratio: 1 / 1;
+    flex: 1 1 0;
+    min-width: 0;
 
     &:hover {
       transform: scale(103%);
       cursor: pointer;
+    }
+
+    @media screen and (min-width: $tablet) {
+      aspect-ratio: auto;
+      max-height: unset;
+      flex: unset;
     }
   }
 }

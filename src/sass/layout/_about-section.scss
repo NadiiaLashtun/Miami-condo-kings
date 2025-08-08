@@ -1,20 +1,42 @@
 .about-section {
-  padding-top: 104px;
+  padding-top: 64px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 104px;
+  }
 
   &__container {
     display: flex;
-    gap: 24px;
+    gap: 48px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+      gap: 24px;
+    }
+  }
+
+  &__title-container {
+    margin-bottom: 0;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 24px) / 2);
+    }
   }
 
   &__title {
-    margin-bottom: 0;
-    //max-width: 324px;
-    flex-basis: calc((100% - 24px) / 2);
     text-align: start;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $tablet) {
+      max-width: 348px;
+    }
   }
 
   &__text-container {
     flex-basis: calc((100% - 24px) / 2);
+    min-width: 280px;
+    flex: 1;
   }
 
   &__text {

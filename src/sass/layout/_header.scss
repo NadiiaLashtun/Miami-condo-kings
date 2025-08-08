@@ -12,16 +12,23 @@
   }
 
   &__phone-container {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 16px;
   }
 
   &__phone {
+    display: none;
     color: var(--color-secondary-normal);
 
     &:hover {
       color: var(--color-brand-light);
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: inline;
     }
   }
 
