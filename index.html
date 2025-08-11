@@ -18,7 +18,55 @@
         <div class="burger">
           <span class="burger__line"></span>
         </div>
-        <nav></nav>
+        <nav class="header__menu">
+          <ul class="header__menu-container">
+            <li>
+              <a
+                href="/"
+                class="header__menu-item"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="header__menu-item"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="header__menu-item"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="header__menu-item"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacts"
+                class="header__menu-item"
+                >Contacts</a
+              >
+            </li>
+            <li class="header__menu-tel">
+              <a
+                href="tel:+12345555555"
+                class="header__menu-item"
+                >+1 234 555-55-55 <br />
+                Call to order</a
+              >
+            </li>
+          </ul>
+          <div class="header__backdrope"></div>
+        </nav>
+
         <svg class="logo">
           <use href="./src/img/icons.svg#icon-logo"></use>
         </svg>
@@ -43,7 +91,10 @@
       </section>
 
       <!-- About us -->
-      <section class="about-section section">
+      <section
+        class="about-section section"
+        id="about"
+      >
         <div class="about-section__container container">
           <div class="about-section__title-container">
             <h2 class="about-section__title">
@@ -82,7 +133,10 @@
       </section>
 
       <!-- Gallery -->
-      <section class="gallery-section section">
+      <section
+        class="gallery-section section"
+        id="gallery"
+      >
         <div class="container">
           <h2>Gallery</h2>
           <div class="gallery-section__container">
@@ -175,7 +229,10 @@
       </section>
 
       <!-- Testimonials -->
-      <section class="section">
+      <section
+        class="section"
+        id="testimonials"
+      >
         <div class="container">
           <h2>Testimonials</h2>
           <div class="testimonials-section__card-container">
@@ -239,7 +296,10 @@
       </section>
 
       <!-- Contacts -->
-      <section class="contacts-section section">
+      <section
+        class="contacts-section section"
+        id="contacts"
+      >
         <div class="container">
           <h2 class="contacts-section__title">Contact us</h2>
           <div class="contacts-section__container">
@@ -298,5 +358,6 @@
         </svg>
       </div>
     </footer>
+    <script src="src/js/MobileMenu.js"></script>
   </body>
 </html>

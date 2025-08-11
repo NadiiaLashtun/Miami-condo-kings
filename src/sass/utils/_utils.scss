@@ -1,0 +1,10 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 20%;
+}

@@ -3,6 +3,7 @@
   max-width: 106px;
   max-height: 64px;
   fill: var(--color-secondary-normal);
+  z-index: 10;
 
   @media screen and (min-width: $mobile) {
     max-width: 136px;

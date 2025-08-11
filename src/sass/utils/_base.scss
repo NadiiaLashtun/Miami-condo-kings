@@ -19,16 +19,15 @@ h3 {
 
 h1 {
   color: var(--color-secondary-normal);
-  font-size: 46px;
   line-height: 1;
-
-  @media screen and (min-width: $mobile) {
-    font-size: 56px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    font-size: 80px;
-  }
+  font-size: clamp(48px, 6.3vw, 80px);
+  // при 320px → 46px шрифт
+  // при 1024px → что-то между 46 и 80, например ~65px
+  // при 1920px → 80px
+  // 1vw = 1% ширины окна.
+  // Например, при 1024px → 1vw ≈ 10.24px.
+  // Если мы хотим около 65px при 1024px, делим:
+  // 65px / 10.24px ≈ 6.35vw
 }
 
 h1::before {
@@ -80,6 +79,12 @@ h3 {
 
 p {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .section {
